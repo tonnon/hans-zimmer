@@ -16,7 +16,23 @@ export const metadata: Metadata = {
     description: "Experience the revolutionary world of Hans Zimmer's cinematic compositions",
     type: "website",
   },
-    generator: 'v0.dev'
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/placeholder-logo.png', sizes: '32x32', type: 'image/png' },
+      { url: '/placeholder-logo.png', sizes: '16x16', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/placeholder-logo.png', sizes: '180x180', type: 'image/png' },
+    ],
+    other: [
+      {
+        rel: 'apple-touch-icon-precomposed',
+        url: '/placeholder-logo.png',
+      },
+    ],
+  },
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -33,6 +49,10 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
           rel="stylesheet"
         />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/placeholder-logo.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/placeholder-logo.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/placeholder-logo.png" />
         <meta name="theme-color" content="#D4AF37" />
       </head>
       <body className={inter.className}>{children}</body>

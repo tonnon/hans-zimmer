@@ -1,0 +1,2 @@
+<!-- This is a placeholder comment for favicon.ico -->
+<!-- The actual favicon.ico file should be created by converting an image -->
